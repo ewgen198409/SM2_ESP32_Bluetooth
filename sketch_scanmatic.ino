@@ -5,7 +5,7 @@ const char *pin = "1234";
 String device_name = "SCANMATIK #A78730";
 BluetoothSerial SerialBT;
 
-// Пины для светодиодов
+//  Пины для светодиодов
 const int led_connection = 21;  // Светодиод состояния подключения
 const int led_data = 23;        // Светодиод передачи данных
 
