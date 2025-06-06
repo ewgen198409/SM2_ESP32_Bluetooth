@@ -1,3 +1,4 @@
+// scetch для прошивки 2.21.32
 // По пути C:\Users\USERNAME\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.1.0\libraries\BluetoothSerial\src нужно подкорректировать BUFFER в файле BluetoothSerial.cpp
 // #define RX_QUEUE_SIZE         2048
 // #define TX_QUEUE_SIZE         2048
@@ -9,7 +10,7 @@
 #include "driver/uart.h"
 
 const char *pin = "1234";
-String device_name = "SCANMATIK #A78730";
+String device_name = "SCANMATIK #A111788";
 BluetoothSerial SerialBT;
 
 //  Пины для светодиодов
@@ -17,8 +18,8 @@ const int led_connection = 21;  // Светодиод состояния под�
 const int led_data = 23;        // Светодиод передачи данных
 
 void setup() {
-  Serial.setRxBufferSize(1024);
-  Serial.setTxBufferSize(1024);
+  Serial.setRxBufferSize(2048);
+  Serial.setTxBufferSize(2048);
   Serial.begin(921600);
 
   // Настройка пинов для светодиодов
