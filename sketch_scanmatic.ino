@@ -1,3 +1,10 @@
+// По пути C:\Users\USERNAME\AppData\Local\Arduino15\packages\esp32\hardware\esp32\3.1.0\libraries\BluetoothSerial\src нужно подкорректировать BUFFER в файле BluetoothSerial.cpp
+// #define RX_QUEUE_SIZE         2048
+// #define TX_QUEUE_SIZE         2048
+// #define SPP_TX_QUEUE_TIMEOUT  1000
+// #define SPP_TX_DONE_TIMEOUT   1000
+// #define SPP_CONGESTED_TIMEOUT 1000
+// ==================================================================================================================================================================================
 #include "BluetoothSerial.h"
 #include "driver/uart.h"
 
